@@ -1,0 +1,103 @@
+header.header    
+    .container
+        .row
+            .col-3.no-padding
+                .company-logo
+                    img src="images/logo-main.png" alt="" /
+            .col-9.no-padding
+                .header__main.shadow-outer-sm
+                    .col-1.no-padding
+                        .d-flex.justify-content-start
+                            #toggler title="Toggle sidebar"
+                                i.fas.fa-bars
+                    .col-11.no-padding
+                        .d-flex.justify-content-end
+                            .header__main__details
+                                a.color-black href="/login" title="Keluar" data-turbolinks="false"
+                                    i.fas.fa-sign-out-alt.fa-fw
+                                    | Keluar
+
+.container
+    .row
+        .col-3#accordion-container
+            .row
+                .profile
+                    img src="https://via.placeholder.com/75x75"/
+                    p Admin A
+                    p Level: Daerah
+            .row
+                .accordion-container
+                    a.color-white href="/" data-turbolinks="false"
+                        button.accordion.no-panel.active 
+                            i.fas.fa-home.fa-fw
+                            | Beranda
+                    button.accordion 
+                        i.fas.fa-clipboard.fa-fw
+                        | Lorem Ipsum
+                    .panel
+                        ul
+                            a href="/training" data-turbolinks="false"
+                                li &#9900 Lorem Ipsum
+                            a href="/calendar" data-turbolinks="false"
+                                li 	&#9900 Lorem Ipsum
+                            a href="/all" data-turbolinks="false"
+                                li 	&#9900 Lorem Ipsum
+                    button.accordion 
+                        i.fas.fa-user-circle.fa-fw
+                        | Lorem Ipsum
+                    .panel
+                        ul
+                            a href="/training-acc" data-turbolinks="false"
+                                li 	&#9900 Lorem Ipsum
+                            a href="/login" data-turbolinks="false"
+                                li 	&#9900 Lorem Ipsum
+                    a.color-white href="/training-hint" data-turbolinks="false"
+                        button.accordion.no-panel 
+                            i.fas.fa-question-circle.fa-fw
+                            | Lorem Ipsum
+        .col-9.no-padding#main-content
+            .main-content
+                .container
+                    .row
+                        .main-content__title
+                            p
+                                | Beranda
+                            a.btn--sm.btn-standard--primary href="/training-c" data-turbolinks="false"
+                                i.fas.fa-plus.fa-fw
+                                | Buat Potensi Pajak
+                        .main-content__table
+                            table.table-training#table-training.display
+                                thead
+                                    tr
+                                        th Pendapatan & Hibah
+                                        th Belanja
+                                        th Rasio Belanja - PDB (%)
+                                        th Rasio Pajak - PDB (%)
+                                        th Tahun 
+                                tbody
+                                    tr onclick="document.location='/training-details';return false;" title="Klik untuk melihat detail" data-turbolinks="false"
+                                        td 400 Triliun
+                                        td 425 Triliun
+                                        td 18.6%
+                                        td 12.2%
+                                        td 2004
+                                    tr onclick="document.location='/training-details';return false;" title="Klik untuk melihat detail" data-turbolinks="false"
+                                        td 500 Triliun
+                                        td 525 Triliun
+                                        td 17.9%
+                                        td 13.0%
+                                        td 2005
+                                    tr onclick="document.location='/training-details';return false;" title="Klik untuk melihat detail" data-turbolinks="false"
+                                        td 630 Triliun
+                                        td 650 Triliun
+                                        td 20.0%
+                                        td 12.6%
+                                        td 2006
+
+footer.footer
+    .container
+        .row
+            .col-12
+                .d-flex.justify-content-end.centered-items
+                    a href="http://wellcode.io"
+                        | Powered by Wellcode Global&copy;

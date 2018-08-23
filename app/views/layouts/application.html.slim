@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+html
+  head
+    title IndoTaxEye™
+    = csrf_meta_tags
+
+    meta charset="UTF-8" /
+    meta http-equiv="X-UA-Compatible" content="chrome=1" /
+    meta name="author" content="IndoTaxEye™" /
+    meta name="description" content="Web IndoTaxEye™" /
+    meta name="keywords" content="IndoTaxEye kemenkeu direktorat jenderal pajak kementrian keuangan dinas pendapatan daerah kemkominfo kominfo" /
+    meta name="copyright" content="IndoTaxEye™" /
+    meta name="distribution" content="Global" /
+    meta name="rating" content="General" /
+
+    /meta name="robots" content="index, follow" /
+    /meta name="google-site-verification" content="CpVhxvqnJR6-GIBm9ApJMlbPi19U43042P33pRrErSs" /
+    
+    meta name="apple-mobile-web-app-capable" content="yes" /
+    meta content="yes" name="apple-touch-fullscreen" /
+    meta name="apple-mobile-web-app-status-bar-style" content="black" /
+    link rel="shortcut icon" href="images/logo-main.png" /
+    link rel=("stylesheet") href="//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" /
+    = stylesheet_link_tag "application", media: "all"
+
+    = javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+    = javascript_include_tag "//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" 
+    = javascript_include_tag "https://s3-ap-southeast-1.amazonaws.com/bppsdmk/fontawesome-all-custom.js"
+    = javascript_include_tag "application"
+
+  body
+    = yield
