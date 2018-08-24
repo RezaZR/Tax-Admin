@@ -1,0 +1,82 @@
+header.header    
+    .container
+        .row
+            .col-3.no-padding
+                .company-logo
+                    img src="images/logo-main.png" alt="" /
+            .col-9.no-padding
+                .header__main.shadow-outer-sm
+                    .col-1.no-padding
+                        .d-flex.justify-content-start
+                            #toggler title="Toggle sidebar"
+                                i.fas.fa-bars
+                    .col-11.no-padding
+                        .d-flex.justify-content-end
+                            .header__main__details
+                                a.color-black href="/" title="Keluar" data-turbolinks="false"
+                                    i.fas.fa-sign-out-alt.fa-fw
+                                    | Keluar
+
+.container
+    .row
+        .col-3#accordion-container
+            .row
+                .profile
+                    img src="https://via.placeholder.com/75x75"/
+                    p Admin A
+                    p Level: Pusat
+            .row
+                .accordion-container
+                    a.color-white href="/central-home" data-turbolinks="false"
+                        button.accordion.no-panel.active 
+                            i.fas.fa-home.fa-fw
+                            | Beranda
+                    button.accordion 
+                        i.fas.fa-clipboard.fa-fw
+                        | Potensi Pajak
+                    .panel
+                        ul
+                            a href="/central-tax-central" data-turbolinks="false"
+                                li &#9900 Potensi Pajak Pusat
+                            a href="/central-tax-district" data-turbolinks="false"
+                                li 	&#9900 Potensi Pajak Daerah
+                            a href="/central-tax-mix" data-turbolinks="false"
+                                li 	&#9900 Potensi Pajak Gabungan
+                    a.color-white href="/central-graph" data-turbolinks="false"
+                        button.accordion.no-panel 
+                            i.fas.fa-chart-line.fa-fw
+                            | Graf
+        .col-9.no-padding#main-content
+            .main-content
+                .container
+                    .row
+                        .main-content__title
+                            p
+                                | Perkembangan APBN
+                        .main-content
+                            img src="images/graph-perkembangan-apbn.png"/
+                    .row
+                        .main-content__title
+                            p
+                                | Penerimaan Perpajakan
+                        .main-content
+                            img src="images/graph-penerimaan-perpajakan.png"/
+                    .row
+                        .main-content__title
+                            p
+                                | Selisih Realisasi dengan APBN
+                        .main-content
+                            img src="images/graph-selisih-realisasi-apbn.png"/
+                    .row
+                        .main-content__title
+                            p
+                                | Tax Buoyancy
+                        .main-content
+                            img src="images/graph-tax-buoyancy.png"/
+footer.footer
+    .container
+        .row
+            .col-12
+                .d-flex.justify-content-end.centered-items
+                    a href="http://wellcode.io"
+                        | Powered by Wellcode Global&copy;

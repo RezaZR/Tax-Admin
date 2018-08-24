@@ -341,7 +341,7 @@ textarea {
         color: #fff !important;
         border: none;
         &:hover {
-            background: #253C80 !important;
+            background: #3853a2 !important
         }
     }
     &--delete {
@@ -600,6 +600,7 @@ textarea {
         border-bottom: solid 1px #808080;
         display: block;
         overflow: hidden;
+        padding: .5em;
         p {
             padding: .5em 0;
             float: left;
@@ -607,15 +608,20 @@ textarea {
         }
         a {
             float: right;
-            margin-top: 10px;
             font-size: 17px;
-            margin: 10px 10px 0 0;
+            margin: 10px .25em 0 .25em;
         }
     }
     &__table {
         padding: 1em;
         display: block;
         overflow: hidden;
+    }
+    & img {
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        object-fit: contain;
     }
 }
 
@@ -781,11 +787,32 @@ textarea {
 }
 
 .table-details {
+    width: 100%;
+    & tbody {
+        & tr {
+            &:not(:last-child) {
+                & th,
+                & td {
+                    border-bottom: 1px solid #111;
+                }
+            }
+            & td {
+                text-align: center;
+                & a {
+                    margin: 0 .05em;
+                    color: #3853a2;
+                }
+            }
+        }
+    }
+}
+
+.table-details--2 {
     margin-top: .5em;
     border: 1px solid #111;
     width: 100%;
-    tbody {
-        tr {
+    & tbody {
+        & tr {
             &:nth-child(odd) {
                 background-color: #f9f9f9;
             }
@@ -796,24 +823,24 @@ textarea {
             td {
                 padding: 12px 14px;
             }
-            td {
-                input,
-                select,
-                textarea {
-                    width: 75%;
-                }
-            }
             &:not(:last-child) {
                 th,
                 td {
                     border-bottom: 1px solid #111;
                 }
             }
+            & td {
+                & input,
+                & select,
+                & textarea {
+                    width: 75%;
+                }
+            }
         }
     }
 }
 
-.form-detail-update {
+.form-detail {
     margin: 1em 0;
 }
 
@@ -899,21 +926,4 @@ textarea {
 
 .info {
     padding: .5em;
-}
-
-.hint-container {
-    li {
-        list-style-type: decimal;
-        line-height: 1.85;
-        letter-spacing: .030em;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-    }
-}
-
-.instructor-container {
-    border-bottom: .5px solid #e2e2e2;
-    padding: .5em;
-    &:hover {
-        background-color: #e2e2e2;
-    }
 }

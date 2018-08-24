@@ -1,0 +1,93 @@
+header.header    
+    .container
+        .row
+            .col-3.no-padding
+                .company-logo
+                    img src="images/logo-main.png" alt="" /
+            .col-9.no-padding
+                .header__main.shadow-outer-sm
+                    .col-1.no-padding
+                        .d-flex.justify-content-start
+                            #toggler title="Toggle sidebar"
+                                i.fas.fa-bars
+                    .col-11.no-padding
+                        .d-flex.justify-content-end
+                            .header__main__details
+                                a.color-black href="/" title="Keluar" data-turbolinks="false"
+                                    i.fas.fa-sign-out-alt.fa-fw
+                                    | Keluar
+
+.container
+    .row
+        .col-3#accordion-container
+            .row
+                .profile
+                    img src="https://via.placeholder.com/75x75"/
+                    p Admin A
+                    p Level: Pusat
+            .row
+                .accordion-container
+                    a.color-white href="/central-home" data-turbolinks="false"
+                        button.accordion.no-panel.active 
+                            i.fas.fa-home.fa-fw
+                            | Beranda
+                    button.accordion 
+                        i.fas.fa-clipboard.fa-fw
+                        | Potensi Pajak
+                    .panel
+                        ul
+                            a href="/central-tax-central" data-turbolinks="false"
+                                li &#9900 Potensi Pajak Pusat
+                            a href="/central-tax-district" data-turbolinks="false"
+                                li 	&#9900 Potensi Pajak Daerah
+                            a href="/central-tax-mix" data-turbolinks="false"
+                                li 	&#9900 Potensi Pajak Gabungan
+                    a.color-white href="/central-graph" data-turbolinks="false"
+                        button.accordion.no-panel 
+                            i.fas.fa-chart-line.fa-fw
+                            | Graf
+        .col-9.no-padding#main-content
+            .main-content
+                .container
+                    .row
+                        .main-content__title
+                                a.btn--sm.btn-standard--primary href="/central-home" data-turbolinks="false"
+                                    i.fas.fa-long-arrow-alt-left.fa-fw
+                                    | Kembali
+                                a.btn--sm.btn-standard--primary href="/central-edit" data-turbolinks="false"
+                                    i.fas.fa-pencil-alt.fa-fw
+                                    | Ubah
+                        table.table-details--2.display
+                            tbody
+                                tr
+                                    th PPH
+                                    td 119.5 Triliun
+                                tr
+                                    th PBB + BPHTB
+                                    td 7 Triliun
+                                tr
+                                    th Pajak Lainnya
+                                    td 0
+                                tr
+                                    th PPN + PPnBM
+                                    td 102.6 Triliun
+                                tr
+                                    th Cukai
+                                    td 29.2 Triliun
+                                tr
+                                    th Pajak Perdagangan Internasional
+                                    td 7 Triliun
+                                tr
+                                    th Porsi Penerimaan Pajak
+                                    td 69.6%
+                                tr
+                                    th Tahun
+                                    td 2004
+
+footer.footer
+    .container
+        .row
+            .col-12
+                .d-flex.justify-content-end.centered-items
+                    a href="http://wellcode.io"
+                        | Powered by Wellcode Global&copy;

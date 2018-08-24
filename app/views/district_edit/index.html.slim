@@ -1,0 +1,113 @@
+header.header    
+    .container
+        .row
+            .col-3.no-padding
+                .company-logo
+                    img src="images/logo-main.png" alt="" /
+            .col-9.no-padding
+                .header__main.shadow-outer-sm
+                    .col-1.no-padding
+                        .d-flex.justify-content-start
+                            #toggler title="Toggle sidebar"
+                                i.fas.fa-bars
+                    .col-11.no-padding
+                        .d-flex.justify-content-end
+                            .header__main__details
+                                a.color-black href="/" title="Keluar" data-turbolinks="false"
+                                    i.fas.fa-sign-out-alt.fa-fw
+                                    | Keluar
+
+.container
+    .row
+        .col-3#accordion-container
+            .row
+                .profile
+                    img src="https://via.placeholder.com/75x75"/
+                    p Admin A
+                    p Level: Daerah
+            .row
+                .accordion-container
+                    a.color-white href="/" data-turbolinks="false"
+                        button.accordion.no-panel.active 
+                            i.fas.fa-home.fa-fw
+                            | Beranda
+                    button.accordion 
+                        i.fas.fa-clipboard.fa-fw
+                        | Lorem Ipsum
+                    .panel
+                        ul
+                            a href="/" data-turbolinks="false"
+                                li &#9900 Lorem Ipsum
+                            a href="/" data-turbolinks="false"
+                                li 	&#9900 Lorem Ipsum
+                            a href="/" data-turbolinks="false"
+                                li 	&#9900 Lorem Ipsum
+                    button.accordion 
+                        i.fas.fa-user-circle.fa-fw
+                        | Lorem Ipsum
+                    .panel
+                        ul
+                            a href="/" data-turbolinks="false"
+                                li 	&#9900 Lorem Ipsum
+                            a href="/" data-turbolinks="false"
+                                li 	&#9900 Lorem Ipsum
+                    a.color-white href="/" data-turbolinks="false"
+                        button.accordion.no-panel 
+                            i.fas.fa-question-circle.fa-fw
+                            | Lorem Ipsum
+        .col-9.no-padding#main-content
+            .main-content
+                .container
+                    .row
+                        .main-content__title
+                                a.btn--sm.btn-standard--primary href="/district-home" data-turbolinks="false"
+                                    i.fas.fa-long-arrow-alt-left.fa-fw
+                                    | Kembali
+                        form.form-detail
+                            table.table-details--2
+                                tbody
+                                    tr
+                                        th PPH
+                                        td 
+                                            input type="text" name="pph" /
+                                    tr
+                                        th PBB + BPHTB
+                                        td 
+                                            input type="text" name="pbb" /
+                                    tr
+                                        th Pajak Lainnya
+                                        td 
+                                            input type="text" name="lainnya" /
+                                    tr
+                                        th PPN + PPnBM
+                                        td 
+                                            input type="text" name="ppn" /
+                                    tr
+                                        th Cukai
+                                        td 
+                                            input type="text" name="cukai" /
+                                    tr
+                                        th Pajak Perdagangan Internasional
+                                        td 
+                                            input type="text" name="internasional" /
+                                    tr
+                                        th Porsi Penerimaan Pajak
+                                        td 
+                                            input type="text" name="porsi" /
+                                    tr
+                                        th Tahun
+                                        td 
+                                            input type="date" name="tahun" /
+                        .col-12
+                            .d-flex.justify-content-end
+                                a.btn--sm.btn-standard--primary href="/district-home" data-turbolinks="false"
+                                    i.fas.fa-pencil-alt.fa-fw
+                                    | Ubah
+
+footer.footer
+    .container
+        .row
+            .col-12
+                .d-flex.justify-content-end.centered-items
+                    a href="http://wellcode.io"
+                        | Powered by Wellcode Global&copy;

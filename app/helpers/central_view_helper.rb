@@ -1,0 +1,2 @@
+module CentralViewHelper
+end

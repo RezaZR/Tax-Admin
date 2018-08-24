@@ -15,8 +15,6 @@ $(document).ready(function() {
 
     $(".main-content").css({ minHeight: window.innerHeight - 87.2 });
     $(".accordion-container").css({ height: window.innerHeight - 241.4 });
-    alert($(".main-content").height())
-    alert($(".accordion-container").height() + 122.2);
     if ($(".main-content").height() > $(".accordion-container").height() + 122.2) {
         $(".accordion-container").css({ height: $(".main-content").height() });
     }
@@ -37,10 +35,9 @@ $(document).ready(function() {
 
     })
 
-    $('#table-training').DataTable();
-    $('#table-instructor').DataTable();
-    $('#table-participant-1').DataTable();
-    $('#table-participant-2').DataTable();
+    $('#table-1').DataTable();
+    $('#table-2').DataTable();
+    $('#table-3').DataTable();
 
     document.getElementById("toggler").onclick = function(e) {
         e.stopPropagation();
