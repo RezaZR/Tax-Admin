@@ -26,7 +26,14 @@ html
     = javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
     = javascript_include_tag "//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" 
     = javascript_include_tag "https://s3-ap-southeast-1.amazonaws.com/bppsdmk/fontawesome-all-custom.js"
-    = javascript_include_tag src="application"
+    = javascript_include_tag "all"
+    = javascript_include_tag "datatable"
+    - if (params[:controller] == "central_home") 
+      = javascript_include_tag "jsmaps-libs.js"
+      = javascript_include_tag "jsmaps-panzoom.js"
+      = javascript_include_tag "jsmaps.min.js"
+      = javascript_include_tag "indonesia.js"
+      = javascript_include_tag "central_home"
 
   body
     = yield
